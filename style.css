@@ -1,0 +1,95 @@
+html{
+    background-color: #228b22;
+}
+
+body{
+    margin-left:40%;
+}
+
+#paulette1{
+	top:30%;
+	left:33%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette2{
+	top:30%;
+	left:38%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette3{
+	top:30%;
+	left:43%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette4{
+	top:30%;
+	left:48%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette5{
+	top:30%;
+	left:53%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette6{
+	top:30%;
+	left:80%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette7{
+	top:30%;
+	left:85%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette8{
+	top:70%;
+	left:40%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette9{
+	top:70%;
+	left:45%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette10{
+	top:30%;
+	left:5%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
+
+#paulette11{
+	top:30%;
+	left:10%;
+	width:100px;
+	height:40px;
+	position: absolute;
+}
