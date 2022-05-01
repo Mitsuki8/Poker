@@ -19,6 +19,7 @@ let paulette11=document.getElementById("paulette11")
     
 carte[0] = new Image();
 carte[0].src = './Carte/1.png';
+carte[0].id="rouge un"
 carte[1] = new Image();
 carte[1].src = './Carte/2.png';
 carte[2] = new Image();
@@ -121,9 +122,14 @@ carte[50] = new Image();
 carte[50].src = './Carte/51.png';
 carte[51] = new Image();
 carte[51].src = './Carte/52.png';
-
-
-
+carte[52] = new Image();
+carte[52].src = './Carte/53.png';
+carte[53] = new Image();
+carte[53].src = './Carte/54.png';
+carte[54] = new Image();
+carte[54].src = './Carte/55.png';
+carte[55] = new Image();
+carte[55].src = './Carte/56.png';
 //test.innerHTML="";
 //test.appendChild(carte[51]);
 
@@ -137,11 +143,11 @@ function tirage() {
 
 	for (let i = 0; i < 11; i++) {
 
-		let tirageAleatoire = Math.floor(Math.random() * Math.floor(51) + 1)
+		let tirageAleatoire = Math.floor(Math.random() * Math.floor(51))
 
 		// Tant que la nouvelle valeur aleatoire est deja dans le tableau des tirages on refait une nouvelle selection
 		while (recherche(resultat, tirageAleatoire)) {
-			tirageAleatoire = Math.floor(Math.random() * Math.floor(51) + 1)
+			tirageAleatoire = Math.floor(Math.random() * Math.floor(51))
 		}
 		resultat.push(tirageAleatoire)
         tableau.push(carte[tirageAleatoire])
@@ -166,18 +172,31 @@ function recherche(tab, valeur) {
 
 
 function premierTour(){
-
-    test.innerHTML="";
-    test.appendChild(tableau[0]);
-}
-function displayImage(){
-    for (let i=0 ; i<11 ; i++){
-    //the first statement should generate a random number in the range 0 to 6 (the subscript values of the image file names in the imagesArray)
-    var num = Math.floor(Math.random() * 51+1); // 0...6
-    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
-    //document.canvas.src = carte[num];
-    resultat.push(carte[num])
-    test.innerHTML="";
-    test.appendChild(carte[num]);
-    }
+    paulette6.innerHTML="";
+    paulette6.appendChild(carte[52]);
+    //setTimeout(premierTour, 15000);
+    paulette8.innerHTML="";
+    paulette8.appendChild(tableau[7]);
+    //setTimeout(premierTour, 15000);
+    paulette10.innerHTML="";
+    paulette10.appendChild(carte[53]);
+    //setTimeout(premierTour, 15000);
+    paulette7.innerHTML="";
+    paulette7.appendChild(carte[54]);
+    //setTimeout(premierTour, 15000);
+    paulette9.innerHTML="";
+    paulette9.appendChild(tableau[8]);
+    //setTimeout(premierTour, 15000);
+    paulette11.innerHTML="";
+    paulette11.appendChild(carte[55]);
+    //setTimeout(premierTour, 15000);
+    paulette1.innerHTML="";
+    paulette1.appendChild(tableau[0]);
+    //setTimeout(premierTour, 15000);
+    paulette2.innerHTML="";
+    paulette2.appendChild(tableau[1]);
+    //setTimeout(premierTour, 15000);
+    paulette3.innerHTML="";
+    paulette3.appendChild(tableau[2]);
+    //setTimeout(premierTour, 15000);
 }
